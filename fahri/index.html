@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kunjungan Industri ke Yogyakarta</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+  <style>
+    :root {
+      --primary-color: #007bff;
+      --secondary-color: #343a40;
+      --accent-color: #6c757d;
+      --light-color: #f8f9fa;
+      --dark-color: #212529;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url('https://images.unsplash.com/photo-1564510714747-69c8ce4d724d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .header-content h1 {
+      font-size: 2.5rem;
+    }
+
+    .scroll-down {
+      margin-top: 20px;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 30px 20px;
+    }
+
+    .main-flex {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: space-between;
+    }
+
+    .intro, .conclusion {
+      background: white;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      flex: 1;
+      min-width: 320px;
+    }
+
+    .intro h2, .conclusion h2 {
+      margin-bottom: 10px;
+      color: var(--primary-color);
+      font-size: 1.5rem;
+    }
+
+    .section-title {
+      text-align: center;
+      color: var(--primary-color);
+      font-size: 1.8rem;
+      margin: 50px 0 20px;
+    }
+
+    .timeline-horizontal {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+    }
+
+    .event {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      width: calc(50% - 10px);
+      padding: 20px;
+      transition: 0.3s;
+    }
+
+    .event h3 {
+      color: var(--primary-color);
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+
+    .event:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .photo-card {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+      transition: 0.3s ease;
+    }
+
+    .photo-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .photo-info {
+      padding: 15px;
+    }
+
+    .photo-info h3 {
+      font-size: 1rem;
+      color: var(--secondary-color);
+      margin-bottom: 5px;
+    }
+
+    footer {
+      background: var(--dark-color);
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 60px;
+    }
+
+    .social-links a {
+      color: white;
+      margin: 0 10px;
+      font-size: 1.3rem;
+      transition: 0.3s;
+    }
+
+    .social-links a:hover {
+      color: var(--primary-color);
+    }
+
+    @media(max-width:768px) {
+      .main-flex {
+        flex-direction: column;
+      }
+
+      .event {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>Kunjungan Industri ke Yogyakarta</h1>
+      <p>Pengalaman Tak Terlupakan Bersama Teman-Teman Sekelas</p>
+      <div class="scroll-down" onclick="document.querySelector('.intro').scrollIntoView({behavior: 'smooth'})">
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="main-flex">
+      <section class="intro">
+        <h2>Orientation</h2>
+        <p>Pada minggu lalu, tepatnya hari Rabu, saya bersama teman-teman sekelas mengikuti kegiatan Kunjungan Industri (KI) ke Yogyakarta. Kami berangkat dari Trenggalek sekitar pukul 10 malam dengan menggunakan bus pariwisata...</p>
+      </section>
+
+      <section class="conclusion">
+        <h2>Reorientation</h2>
+        <p>Kunjungan Industri ini memberikan banyak manfaat dan pengalaman baru bagi saya. Saya tidak hanya mendapatkan wawasan tentang proses produksi dan dunia teknologi, tetapi juga bisa mempererat hubungan dengan teman-teman sekelas...</p>
+      </section>
+    </div>
+
+    <h2 class="section-title">Event Timeline</h2>
+    <div class="timeline-horizontal">
+      <div class="event">
+        <h3><i class="fas fa-bus"></i> Perjalanan Malam</h3>
+        <p>Berangkat dari Trenggalek pukul 22.00 dengan bus pariwisata...</p>
+      </div>
+      <div class="event">
+        <h3><i class="fas fa-utensils"></i> Sarapan di Pawon Simbok</h3>
+        <p>Tiba sekitar pukul 04.00 untuk mandi dan sarapan sebelum memulai kegiatan kunjungan industri...</p>
+      </div>
+      <div class="event">
+        <h3><i class="fas fa-tshirt"></i> Omah Oblong</h3>
+        <p>Belajar tentang proses pembuatan sablon kaos, mulai dari bahan-bahan hingga praktik langsung.</p>
+      </div>
+      <div class="event">
+        <h3><i class="fas fa-mountain"></i> Obelix Hills</h3>
+        <p>Menikmati pemandangan indah dari atas perbukitan dengan mobil panther yang disediakan.</p>
+      </div>
+      <div class="event">
+        <h3><i class="fas fa-university"></i> UTDI</h3>
+        <p>Kunjungan ke Universitas Teknologi Digital Indonesia untuk belajar tentang teknologi dan berkeliling kampus.</p>
+      </div>
+      <div class="event">
+        <h3><i class="fas fa-shopping-bag"></i> Malioboro</h3>
+        <p>Berbelanja oleh-oleh dan menikmati suasana kota Yogyakarta sebelum kembali pulang.</p>
+      </div>
+    </div>
+
+    <h2 class="section-title">Photo Gallery</h2>
+    <div class="gallery">
+      <div class="photo-card">
+        <img src="img/WhatsApp Image 2025-05-26 at 19.21.51 (1).jpeg" class="photo-img" alt="Bus Perjalanan">
+        <div class="photo-info">
+          <h3>Perjalanan dengan Bus</h3>
+          <p>Suasana di dalam bus pariwisata selama perjalanan malam ke Yogyakarta.</p>
+        </div>
+      </div>
+      <div class="photo-card">
+        <img src="https://p16-sign-useast2a.tiktokcdn.com/tos-useast2a-avt-0068-giso/e5c87742944976e0f59ce798724cb27f~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=14579&refresh_token=91d971e2&x-expires=1748437200&x-signature=mPTMo%2F3NJPa95eMEM%2FUlzOkV19g%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my" class="photo-img" alt="Pawon Simbok">
+        <div class="photo-info">
+          <h3>Pawon Simbok</h3>
+          <p>Rumah makan legendaris yang menyajikan nasi liwet komplit dengan nuansa tradisional.</p>
+        </div>
+      </div>
+      <div class="photo-card">
+        <img src="img/WhatsApp Image 2025-05-26 at 19.21.52.jpeg" class="photo-img" alt="Omah Oblong">
+        <div class="photo-info">
+          <h3>Omah Oblong</h3>
+          <p>Belajar proses sablon kaos langsung dari ahlinya.</p>
+        </div>
+      </div>
+      <div class="photo-card">
+        <img src="img/WhatsApp Image 2025-05-26 at 19.21.51.jpeg" class="photo-img" alt="Obelix Hills">
+        <div class="photo-info">
+          <h3>Obelix Hills</h3>
+          <p>Pemandangan indah dari atas bukit yang menyejukkan mata.</p>
+        </div>
+      </div>
+      <div class="photo-card">
+        <img src="img/WhatsApp Image 2025-05-26 at 19.21.50.jpeg" class="photo-img" alt="UTDI">
+        <div class="photo-info">
+          <h3>Universitas Teknologi Digital Indonesia</h3>
+          <p>Belajar teknologi masa kini di UTDI.</p>
+        </div>
+      </div>
+      <div class="photo-card">
+        <img src="img/WhatsApp Image 2025-05-26 at 19.21.49.jpeg" class="photo-img" alt="Malioboro">
+        <div class="photo-info">
+          <h3>Malioboro</h3>
+          <p>Berbelanja oleh-oleh dan kuliner di pusat kota.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="social-links">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+    <p>&copy; 2025 Kunjungan Industri Yogyakarta | Dibuat oleh Kelompok Kami</p>
+  </footer>
+</body>
+</html>
